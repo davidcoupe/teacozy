@@ -57,7 +57,7 @@ nav span a {
   background-position: center;
   background-repeat: no-repeat;
   height: 700px;
-  max-width: 1200px;
+  width: 1200px;
   margin: 69px auto 0px auto;
       /*to compensate for fixed header as it is removed from flow & auto to best utilize max-width*/
 }
@@ -68,19 +68,35 @@ nav span a {
     /*opacity not in spec, but looks good...*/
 }
 
+.mission_container h2 {
+    margin: 10px auto 20px auto;
+}
+
+.mission_container h4 {
+    margin: 10px auto 10px auto;
+}
+
+
 #featured {
-    max-width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
+    justify-content:center;
+}
+
+.featured_container {
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
 }
 
 .item_container {
+  width: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+/*  align-items: center;*/
 }
 
 .item {
@@ -93,23 +109,27 @@ margin: 10px;
 
 #locations {
   display: flex;
-  justify-content: space-around;
+  flex-direction:column;
+  /*space-around*/
   background-image: url("../images/locations-background.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  height: 500px;
+  background-size: cover;
+    /*to resolve overflow on resizing*/
+  min-height: 500px;
+      /*to resolve overflow on resizing*/
   margin: auto;
 }
 
-#locations h2 {
-
-  text-align: center;
+.store_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .store {
   width: 300px;
   height: 240px;
-  margin: 15px 20px 0px 20px;
+  margin: 15px 20px 15px 20px;
   opacity: 1;
   background-color: black;
 }
