@@ -64,43 +64,35 @@ nav span a {
 
 .mission_container {
   background-color: black;
-  opacity: 0.9;
-    /*opacity not in spec, but looks good...*/
 }
 
 .mission_container h2 {
-    margin: 10px auto 20px auto;
+  margin: 10px auto 20px auto;
 }
 
 .mission_container h4 {
-    margin: 10px auto 10px auto;
+  margin: 10px auto 10px auto;
 }
-
 
 #featured {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content:center;
 }
 
 .featured_container {
-  width: 1000px;
-  justify-content: center;
-  align-items: center;
-  align-items: center;
+  flex-basis: 1000px;
 }
 
 .item_container {
-  width: 1000px;
+  flex-basis: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-/*  align-items: center;*/
 }
 
 .item {
-margin: 10px;
+  margin: 10px;
 }
 
 .item h4 {
@@ -110,13 +102,12 @@ margin: 10px;
 #locations {
   display: flex;
   flex-direction:column;
-  /*space-around*/
   background-image: url("../images/locations-background.jpg");
   background-position: center;
   background-size: cover;
     /*to resolve overflow on resizing*/
   min-height: 500px;
-      /*to resolve overflow on resizing*/
+    /*to resolve overflow on resizing*/
   margin: auto;
 }
 
