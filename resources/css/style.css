@@ -1,0 +1,126 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+    /*improved look of page edges*/
+}
+
+header {
+  min-height: 69px;
+    /*set min-height for responsiveness instead of using overflow for responsiveness;*/
+  background-color: inherit;
+    /*needed to show header on top when scrolling*/
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  display: flex;
+    /*block caused everything to center and overlap; inline-flex caused everything to jusitfy-right; inline-block caused everything to justify-right and overlap*/
+  justify-content: space-between;
+    /*justifies space between the flex items (.logo and nav), creating the effect of justifying-right nav*/
+  align-items: center;
+  flex-flow: wrap;
+  z-index: 5;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+    /*Needed to specify height at img level, not .logo level to display correctly*/
+  margin-left: 10px;
+}
+
+nav {
+  margin-right: 10px;
+}
+
+nav span a {
+  text-decoration: underline;
+  color: inherit;
+    /*override default stylesheet for hyperlinks*/
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  /*Getting these 2 lines correct makes or breaks the entire page*/
+}
+
+#mission {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../images/mission-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  max-width: 1200px;
+  margin: 69px auto 0px auto;
+      /*to compensate for fixed header as it is removed from flow & auto to best utilize max-width*/
+}
+
+.mission_container {
+  background-color: black;
+  opacity: 0.9;
+    /*opacity not in spec, but looks good...*/
+}
+
+#featured {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.item_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+margin: 10px;
+}
+
+.item h4 {
+  margin: 0px;
+}
+
+#locations {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../images/locations-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: auto;
+}
+
+#locations h2 {
+
+  text-align: center;
+}
+
+.store {
+  width: 300px;
+  height: 240px;
+  margin: 15px 20px 0px 20px;
+  opacity: 1;
+  background-color: black;
+}
+
+#contact {
+  max-height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+#footer {
+  margin-left: 20px;
+  text-align: left;
+}

@@ -1,0 +1,45 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/*header {
+
+  width: 100%;
+  Why did I need to specify width to make the header take up the whole page? Isn't <header> a block-level element?
+}*/
+
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  /*display: inline-flex;*/
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+#masthead .logo {
+  align-items: center;
+}
+
+#masthead .logo img {
+  padding-left: 10px;
+  height: 50px;
+    align-content: center;
+}
+
+#masthead .navigation {
+  display: inline-flex;
+  text-align:right;
+  text-decoration: underline;
+  align-content: flex-end;
+  /*position: relative;*/
+  width: 100%;
+  /*justify-content: space-between;*/
+}
