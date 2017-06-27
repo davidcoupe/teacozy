@@ -78,6 +78,8 @@ nav span a {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    padding-top: 69px;
+      /*to compensate anchor reference due to fixed header*/
 }
 
 .featured_container {
@@ -92,11 +94,17 @@ nav span a {
 }
 
 .item {
-  margin: 10px;
+  margin: 15px;
 }
 
 .item h4 {
   margin: 0px;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px
 }
 
 #locations {
@@ -109,6 +117,8 @@ nav span a {
   min-height: 500px;
     /*to resolve overflow on resizing*/
   margin: auto;
+  padding-top: 69px;
+    /*to compensate anchor reference due to fixed header*/
 }
 
 .store_container {
